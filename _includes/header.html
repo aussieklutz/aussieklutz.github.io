@@ -1,6 +1,6 @@
 <header class="site-header" role="banner">
     <nav class="main_menu">
-        <strong><a class="site-title" rel="author" href="{{ " / " | relative_url }}">{{ site.title | escape }}{%- if page.title  -%} :: {{ page.title }}{%- endif -%}</a></strong> {%- if page_paths -%}
+        <strong><a class="site-title" rel="author" href="{{ " / " | relative_url }}">{{ site.title | escape }}{%- if page.title  -%}&nbsp;::&nbsp;{{ page.title }}{%- endif -%}</a></strong> {%- if page_paths -%}
         <ul class="menu_items">
             {%- assign default_paths = site.pages | map: "path" -%} {%- assign page_paths = site.header_pages | default: default_paths -%}
             <li class="menu_item">
