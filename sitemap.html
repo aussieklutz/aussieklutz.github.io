@@ -8,7 +8,7 @@ permalink: /sitemap.html
     <ul>
         {% for nextpage in site.html_pages %}
         <li>
-            <a href="{{ nextpage.url }}">{{ nextpage.title | default: nextpage.name }}</a>
+            <a href="{{ nextpage.url }}">{{ nextpage.url }}</a>
         </li>
         {% endfor %}
     </ul>
