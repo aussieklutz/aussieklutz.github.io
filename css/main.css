@@ -15,8 +15,8 @@
     font-size: 1.6rem;
 }
 
-.main_menu .menu_cat,
-.main_menu .sub_menu {
+.main_menu .menu_items,
+.main_menu .submenu_items {
     display: flex;
     list-style: none;
     padding: 0;
@@ -32,7 +32,7 @@
     background: #a0b1c2;
 }
 
-.main_menu .submenu_cat .sub_menu {
+.main_menu .menu_item .submenu_items {
     display: none;
     position: absolute;
     background: #a0b1c2;
@@ -41,6 +41,6 @@
     right: 0;
 }
 
-.main_menu .submenu_cat:hover .sub_menu {
+.main_menu .menu_item:hover .submenu_items {
     display: block;
 }
