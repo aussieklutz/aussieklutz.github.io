@@ -1,6 +1,6 @@
 ---	
-layout: page	
-title: SiteMap
+layout: sitemap
+title: Site Map
 permalink: /
 ---	
 
