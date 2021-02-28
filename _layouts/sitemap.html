@@ -1,8 +1,10 @@
---- layout: page ---
+---
+layout: page
+---
 <article class="post">
 
     <ul>
-        {% for nextpage in site.pages %}
+        {% for nextpage in site.html_pages %}
         <li>
             <a href="{{ nextpage.url }}">{{ nextpage.title }}</a>
         </li>
