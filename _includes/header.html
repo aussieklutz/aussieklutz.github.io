@@ -2,15 +2,20 @@
     <nav class="main_menu">
         <strong><a class="site-title" rel="author" href="{{ site.url }}">{{ site.title }}{%- if page.title  -%}&nbsp;::&nbsp;{{ page.title }}{%- endif -%}</a></strong> {%- if site.collections -%}
         <ul class="menu_items">
-            {%- for thiscategory in site.categories -%}
             <li class="menu_item">
-                <span>Categories</span>
+                <span>Latest</span>
                 <ul class="submenu_items">
-                    {%- for thispage in site.categories.thiscategory` -%}
+                    {% for thispost in site.posts limit:10 %}
+                    <li><a class="page-link" href="{{ thispost.url }}">{{ thispost.title | escape }}</a></li>{%- endfor -%}
+                </ul>
+            </li>
+            <li class="menu_item">
+                <span>Pages</span>
+                <ul class="submenu_items">
+                    {%- for thispage in site.html_pages` -%}
                     <li><a class="page-link" href="{{ thispage.url }}">{{ thispage.title | escape }}</a></li>{%- endfor -%}
                 </ul>
             </li>
-            {%- endfor -%}
         </ul>
     </nav>
 </header>
