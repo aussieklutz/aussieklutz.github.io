@@ -1,6 +1,6 @@
 ---	
 layout: sitemap
 title: Site Map
-permalink: /
+permalink: /sitemap/
 ---	
 

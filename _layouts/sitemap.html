@@ -6,7 +6,7 @@ layout: page
     <ul>
         {% for nextpage in site.html_pages %}
         <li>
-            <a href="{{ nextpage.url }}">{{ nextpage.title }}</a>
+            <a href="{{ nextpage.url }}">{{ nextpage.title | nextpage.name }}</a>
         </li>
         {% endfor %}
     </ul>
