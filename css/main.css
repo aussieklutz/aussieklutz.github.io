@@ -3,13 +3,10 @@
     margin: 0;
 }
 
-.title_bar {
-    background: #aabbcc;
-}
-
 .main_menu {
     display: flex;
     align-items: center;
+    background: #aabbcc;
 }
 
 .main_menu strong {
