@@ -1,14 +1,18 @@
 <header class="site-header" role="banner">
-    <nav class="main_menu">
-        <strong><a class="site-title" rel="author" href="{{ site.url }}">{{ site.title }}{%- if page.title  -%}&nbsp;::&nbsp;{{ page.title }}{%- endif -%}</a></strong>
-        <ul class="menu_items">
-            <li class="menu_item">
-                <span>Latest</span>
-                <ul class="submenu_items">
-                    {% for thispost in site.posts limit:10 %}
-                    <li><a class="page-link" href="{{ thispost.url }}">{{ thispost.title | escape }}</a></li>{%- endfor -%}
+    <div class="row">
+        <div class="col">
+            <nav class="main_menu">
+                <strong><a class="site-title" rel="author" href="{{ site.url }}">{{ site.title }}{%- if page.title  -%}&nbsp;::&nbsp;{{ page.title }}{%- endif -%}</a></strong>
+                <ul class="menu_items">
+                    <li class="menu_item">
+                        <span>Latest</span>
+                        <ul class="submenu_items">
+                            {% for thispost in site.posts limit:10 %}
+                            <li><a class="page-link" href="{{ thispost.url }}">{{ thispost.title | escape }}</a></li>{%- endfor -%}
+                        </ul>
+                    </li>
                 </ul>
-            </li>
-        </ul>
-    </nav>
+            </nav>
+        </div>
+    </div>
 </header>
