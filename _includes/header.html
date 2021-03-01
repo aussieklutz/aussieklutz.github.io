@@ -9,13 +9,6 @@
                     <li><a class="page-link" href="{{ thispost.url }}">{{ thispost.title | escape }}</a></li>{%- endfor -%}
                 </ul>
             </li>
-            <li class="menu_item">
-                <span>Pages</span>
-                <ul class="submenu_items">
-                    {%- for thispage in site.html_pages` -%}
-                    <li><a class="page-link" href="{{ thispage.url }}">{{ thispage.title | escape }}</a></li>{%- endfor -%}
-                </ul>
-            </li>
         </ul>
     </nav>
 </header>
