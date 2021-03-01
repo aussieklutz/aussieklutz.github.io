@@ -1,8 +1,10 @@
 <header class="site-header container" role="banner">
     <div class="row">
         <div class="col">
+            <strong><a class="site-title" rel="author" href="{{ site.url }}">{{ site.title }}{%- if page.title  -%}&nbsp;::&nbsp;{{ page.title }}{%- endif -%}</a></strong>
+        </div>
+        <div class="col">
             <nav class="main_menu">
-                <strong><a class="site-title" rel="author" href="{{ site.url }}">{{ site.title }}{%- if page.title  -%}&nbsp;::&nbsp;{{ page.title }}{%- endif -%}</a></strong>
                 <ul class="menu_items">
                     <li class="menu_item">
                         <span>Latest</span>
