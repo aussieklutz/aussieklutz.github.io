@@ -10,9 +10,9 @@
       }
       let xhr = new XMLHttpRequest();
       xhr.addEventListener("load", reqListener);
-      xhr.open("POST", "http://surfsup.chal.cybears.io:5000/admin");
-      xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
-      xhr.send("username=bumblebear&password=iheartpandroids");
+      xhr.open("GET", "https://api.myip.com");
+      // xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+      xhr.send();
     </script>
   </body>
 </html>
