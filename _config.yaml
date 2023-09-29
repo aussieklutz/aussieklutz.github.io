@@ -1,7 +1,0 @@
----
-title: RandomComplexity
-description: "The musings, experiments and discoveries of AussieKlutz"
-baseurl: "/"
-url: "https://randomcomplexity.com" # the base hostname & protocol for your site, e.g. http://example.com
-remote_theme: "abhinavs/moonwalk"
----
